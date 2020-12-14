@@ -1,5 +1,5 @@
 ---
-title: Home | Stewpolley.com
+title: Home
 layout: default
 ---
 <ul class="post-previews">
