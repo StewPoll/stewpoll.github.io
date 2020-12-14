@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ page.title }} | Stewpolley.com</title>
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="{{ '/assets/images/favicon.ico' | relative_url }}" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+</head>
+<body>
+<div class="wrapper" align="center">
+    <div class="header">
+        <div>
+            <a href="/">
+                <img src="{{ '/assets/images/Logo-512.png' | relative_url }}" class="header-image">
+            </a>
+        </div>
+        <nav>
+            <ul class="menu" id="header-menu">
+                <li class="menu-item">
+                    <a href="/recommended-reading">Recommended Reading</a>
+                </li>
+                <li class="menu-item">
+                    <a href="/security-tips">Security Tips</a>
+                </li>
+                <li class="menu-item">
+                    <a href="https://tools.stewpolley.com">Tools</a>
+                </li>
+                <li class="menu-item">
+                    <a href="/contact">Contact</a>
+                </li>
+                <li class="toggle">
+                    <a href="#"><i class="fas fa-bars"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="content">
+        {{ content }}
+    </div>
+    <div class="footer">
+        <p>&copy; {{ "now" | date: "%Y" }} Stewart Polley. All Rights Reserved</p>
+        <p>
+            <a href="https://twitter.com/stewpoll" title="Twitter"><i class="fab fa-twitter"></i></a>&nbsp;
+            <a href="https://stewpolley.com/feed/" title="RSS"><i class="fas fa-rss-square"></i></a>&nbsp;
+            <a href="https://github.com/stewpoll" title=""><i class="fab fa-github"></i></a>
+        </p>
+    </div>
+</div>
+<script src="{{ '/assets/js/main.js' | relative_url}}"></script>
+</body>
+</html>
